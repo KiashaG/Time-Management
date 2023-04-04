@@ -1,0 +1,105 @@
+﻿<Window x:Class="WpfAppPROGTask2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPROGTask2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+
+        <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#7be9f6" Offset="0.0"/>
+                    <GradientStop Color="#f083da" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+
+
+
+
+        <StackPanel Margin="32,10,0,0">
+            <TextBlock Text="HOME" Foreground="Black" FontWeight="Light" FontSize="28" HorizontalAlignment="Left" Margin="0,0,0,20" RenderTransformOrigin="1,0.525" Width="142"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Border Width="400" Height="200">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                            <GradientStop Color="#3aa0ff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
+                    </Border.Clip>
+
+                    <Grid>
+
+                        <TextBlock Text=" GET ORGANISED" Foreground="Black" FontWeight="Light" FontSize="35" Margin="10,10,10,0" />
+                        <TextBlock Text=" TIME MANAGEMENT" Foreground="Black" FontSize="20" Margin="11,68,10,105" />
+                        <Button Content="Button" Width="100" Height="0"/>
+                        <Button Content="LOGIN" Width="100" Height="50" Margin="277,121,23,29" Foreground="Black"  Background="White" Click="Login"  />
+                        <Button Content="REGISTER" HorizontalAlignment="Center" Margin="0,121,0,0" VerticalAlignment="Top" Height="50" Width="100" Background="Lavender" Click="Register"/>
+
+
+
+                    </Grid>
+                </Border>
+                <Border Width="200" Height="200" CornerRadius="10" Margin="45,0,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#ffc554" Offset="0.0"/>
+                            <GradientStop Color="#ffb73a" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Image Margin="0,30,0,30" HorizontalAlignment="Center" Width="152" Source="https://thumbs.dreamstime.com/b/watercolor-graduation-cap-diploma-laurel-wteath-hand-drawn-school-illustration-grading-watercolor-graduation-cap-214284206.jpg" />
+                    <!--https://thumbs.dreamstime.com/b/watercolor-graduation-cap-diploma-laurel-wteath-hand-drawn-school-illustration-grading-watercolor-graduation-cap-214284206.jpg-->
+
+                </Border>
+            </StackPanel>
+
+
+            <StackPanel/>
+
+            <StackPanel>
+
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+
+
+                <TextBlock Text="STUDENT MANAGEMENT CATEGORIES" Foreground="Black"  FontSize="15" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="150" Height="150" Background="#844eff" CornerRadius="10" Margin="0">
+                        <Image Margin="0,10,27.4,10.4" HorizontalAlignment="Right" Width="96" Source="https://png.pngtree.com/element_our/png_detail/20181129/male-student-icon-png_251938.jpg"/>
+                    </Border>
+                    <!--https://png.pngtree.com/element_our/png_detail/20181129/male-student-icon-png_251938.jpg-->
+
+                    <Border Width="150" Height="150" Background="Aqua" CornerRadius="10" >
+                        <Image Margin="26,10,32.4,10.4" Source="https://w7.pngwing.com/pngs/408/44/png-transparent-book-computer-icons-ico-rectangle-material-glasses-thumbnail.png"/>
+                    </Border>
+                    <!--https://w7.pngwing.com/pngs/408/44/png-transparent-book-computer-icons-ico-rectangle-material-glasses-thumbnail.png-->
+
+                    <Border Width="150" Height="150" Background="#4eff91" CornerRadius="10">
+                        <Image Margin="28,10,27.4,10.4" Source="https://previews.123rf.com/images/andiasmara/andiasmara1710/andiasmara171000021/88373067-study-time-icon-design-illustration-.jpg"/>
+                    </Border>
+                    <!--https://previews.123rf.com/images/andiasmara/andiasmara1710/andiasmara171000021/88373067-study-time-icon-design-illustration-.jpg-->
+
+                    <Border Width="150" Height="150" Background="#ecff4e" CornerRadius="10">
+                        <Image Margin="11,-13,11,-13" Source="https://www.pngkey.com/png/detail/71-712555_scope-reports-icon-png-circle.png"/>
+                    </Border>
+                    <!--https://www.pngkey.com/png/detail/71-712555_scope-reports-icon-png-circle.png-->
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+
+</Window>
